@@ -235,30 +235,9 @@ class assignment3:
                     else:
                         continue
         def ques8(dec_num):
-            oct_num = ''
-            while dec_num > 0:
-                z = dec_num%8
-                dec_num = dec_num//8
-                oct_num += str(z)
-            oct_num = int(oct_num[::-1])
-            hex_num = ''
-            while dec_num > 0:
-                z = dec_num%16
-                if z > 9:
-                    ab = 'ABCDEFGH'
-                    z = ab[z-10]
-                dec_num = dec_num//16
-                hex_num += str(z)
-            hex_num = (hex_num[::-1])
-            bin_num =''
-            while dec_num > 0:
-                z = dec_num%2
-                dec_num = dec_num//2
-                bin_num += str(z)
-            bin_num = (bin_num[::-1])
-            print(f'\nBinary Number: {bin_num}')
-            print(f'\nOctal Number: {oct_num}')
-            print(f'\nHexaDecimal Number: {hex_num}')
+            print(f'\nBinary Number: {bin(dec_num)}')
+            print(f'\nOctal Number: {oct(dec_num)}')
+            print(f'\nHexaDecimal Number: {hex(dec_num)}')
 
 class test_questions: # this is completely unnecessary but just a testing code to try all questions out. 
     print('\n\n=======================================')
