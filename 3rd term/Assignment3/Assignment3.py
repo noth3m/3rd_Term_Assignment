@@ -174,7 +174,7 @@ class assignment3:
                     else:
                         print(' ',end='')
                 print()
-    class textquestions:# this class is for all questions except pattern questions , questions 2, 5, 6 and 9 not included
+    class textquestions:# this class is for all questions except pattern questions , questions 2, 5 and 6  not included
         def ques1(n):
             assignment3.pattern_questions.ques18(n)
         def ques2(n):
