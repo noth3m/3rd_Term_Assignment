@@ -1,5 +1,5 @@
 class assignment3:    
-    class pattern_questions : # this class is solely for pattern questions  
+    class pattern_questions : # this class is solely for pattern questions , each function name defines its part number 
         def ques1(n): 
             for i in range(n):
                 for j in range(i+1):
@@ -174,7 +174,7 @@ class assignment3:
                     else:
                         print(' ',end='')
                 print()
-    class textquestions:
+    class textquestions:# this class is for all questions except pattern questions , questions 2, 5, 6 and 9 not included
         def ques1(n):
             assignment3.pattern_questions.ques18(n)
         def ques2(n):
