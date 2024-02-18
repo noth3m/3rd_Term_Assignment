@@ -1,6 +1,6 @@
 class assignment3:    
-    class tablequestions :   
-        def ques1(n):
+    class pattern_questions : # this class is solely for pattern questions  
+        def ques1(n): 
             for i in range(n):
                 for j in range(i+1):
                     print('*',end='')
@@ -176,7 +176,7 @@ class assignment3:
                 print()
     class textquestions:
         def ques1(n):
-            assignment3.tablequestions.ques18(n)
+            assignment3.pattern_questions.ques18(n)
         def ques2(n):
             str_abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
             for i in range(n):
@@ -267,43 +267,43 @@ class test_questions: # this is completely unnecessary but just a testing code t
         part_number = int(input('Question no.1, part '))
         input_num = int(input('Number of Rows I want '))
         if part_number == 1:
-            assignment3.tablequestions.ques1(input_num)
+            assignment3.pattern_questions.ques1(input_num)
         elif part_number == 2:
-            assignment3.tablequestions.ques2(input_num)
+            assignment3.pattern_questions.ques2(input_num)
         elif part_number == 3:
-            assignment3.tablequestions.ques3(input_num)
+            assignment3.pattern_questions.ques3(input_num)
         elif part_number == 4:
-            assignment3.tablequestions.ques4(input_num)
+            assignment3.pattern_questions.ques4(input_num)
         elif part_number == 5:
-            assignment3.tablequestions.ques5(input_num)
+            assignment3.pattern_questions.ques5(input_num)
         elif part_number == 6:
-            assignment3.tablequestions.ques6(input_num)
+            assignment3.pattern_questions.ques6(input_num)
         elif part_number == 7:
-            assignment3.tablequestions.ques7(input_num)
+            assignment3.pattern_questionsonsons.ques7(input_num)
         elif part_number == 8:
-            assignment3.tablequestions.ques8(input_num)
+            assignment3.pattern_questions.ques8(input_num)
         elif part_number == 9:
-            assignment3.tablequestions.ques9(input_num)
+            assignment3.pattern_questionsons.ques9(input_num)
         elif part_number == 10:
-            assignment3.tablequestions.ques10(input_num)
+            assignment3.pattern_questions.ques10(input_num)
         elif part_number == 11:
-            assignment3.tablequestions.ques11(input_num)
+            assignment3.pattern_questions.ques11(input_num)
         elif part_number == 12:
-            assignment3.tablequestions.ques12(input_num)
+            assignment3.pattern_questionsonsonsonsons.ques12(input_num)
         elif part_number == 13:
-            assignment3.tablequestions.ques13(input_num)
+            assignment3.pattern_questions.ques13(input_num)
         elif part_number == 14:
-            assignment3.tablequestions.ques14(input_num)            
+            assignment3.pattern_questions.ques14(input_num)            
         elif part_number == 15:
-            assignment3.tablequestions.ques15(input_num)
+            assignment3.pattern_questionsons.ques15(input_num)
         elif part_number == 16:
-            assignment3.tablequestions.ques16(input_num)
+            assignment3.pattern_questions.ques16(input_num)
         elif part_number == 17:
-            assignment3.tablequestions.ques17(input_num)
+            assignment3.pattern_questions.ques17(input_num)
         elif part_number == 18:
-            assignment3.tablequestions.ques18(input_num)
+            assignment3.pattern_questions.ques18(input_num)
         elif part_number == 19:
-            assignment3.tablequestions.ques19(input_num)
+            assignment3.pattern_questions.ques19(input_num)
         else:
             print('input error')
     elif ques_number == 2:
