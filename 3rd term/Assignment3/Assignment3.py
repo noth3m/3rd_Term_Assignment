@@ -163,7 +163,20 @@ class assignment3:
                         print(' ',end='')
                 print()
         def ques18(n):
-           print()
+            set_pascal = [1]
+            for i in range(1,n+1):
+                for l in range(n-i):
+                    print(' ',end='')
+                set_pascal2 = set_pascal
+                temp = [0] + set_pascal + [0]
+                for k in range(len(set_pascal)):
+                    print(set_pascal[k],end=' ')
+                set_pascal2 = []
+                for j in range(1,i+2):
+                    set_pascal2 = set_pascal2 + [temp[j-1]+temp[j]]
+                    set_pascal = set_pascal2
+                print()
+                    
         def ques19(n):
             for i in range(n):
                 for j in range(n):
