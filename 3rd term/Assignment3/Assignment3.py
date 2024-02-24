@@ -187,7 +187,7 @@ class assignment3:
                     else:
                         print(' ',end='')
                 print()
-    class textquestions:# this class is for all questions except pattern questions , questions 2, 5 and 6  not included
+    class textquestions:# this class is for all questions except pattern questions , questions 5 and 6  not included
         def ques1(n):
             assignment3.pattern_questions.ques18(n)
         def ques2(n):
@@ -220,10 +220,61 @@ class assignment3:
                     continue
             print()
             print(f'The sum of all prime numbers is:{sum(y)}')
-        def ques4(n):
+        def ques4(n):# 12,13,14,23,24,34
+            set = []
             for i in range(1,n+1):
-                for j in range(2**n):
-                    print()
+                set = set + [i]
+            for j in range(2**n):
+                print()
+        def ques5(n):
+            for i in range(1,n+1):
+                x = []
+                y = 0
+                while i > 0:
+                    if i > 900 :
+                        y = 1000
+                        if i < 1000:
+                            x = x + ['C']
+                            y = 900
+                        x = x + ['M']
+                    elif i >= 400:
+                        y = 500
+                        if i < 500:
+                            x = x + ['C']
+                            y = 400
+                        x = x + ['D'] 
+                    elif i >= 90:
+                        y = 100
+                        if i < 100:
+                            x = x + ['X']
+                            y = 90
+                        x = x + ['C']
+                    elif i >= 40:
+                        y = 50
+                        if i < 50:
+                            x = x + ['X']
+                            y = 40
+                        x = x +['L']
+                    elif i >= 9:
+                        y = 10
+                        if i < 10:
+                            x = x + ['I']
+                            y = 9
+                        x = x + ['X']
+                    elif i >= 5:
+                        y = 5
+                        if i < 5:
+                            x = x + ['I']
+                            y = 4
+                        x = x +['V']
+                    elif i < 4:
+                        y = 1
+                        x = x + ['I']
+                    else:
+                        print('max limit is 1000')
+                    i = i - y
+                for k in range(len(x)):
+                    print(x[k])
         def ques6(n):
             x=[]
             for i in range(1,n+1):
@@ -310,6 +361,9 @@ class test_questions: # this is completely unnecessary but just a testing code t
     elif ques_number == 5:
         input_num = int(input('set length: '))
         assignment3.textquestions.ques4(input_num)  
+    elif ques_number == 6:
+        input_num = int(input('Print Roman Numeral till: '))
+        assignment3.textquestions.ques5(input_num)  
     elif ques_number == 7:
         input_num = int(input('n: '))
         assignment3.textquestions.ques6(input_num)  
